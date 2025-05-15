@@ -6,12 +6,14 @@ import ExampleOne from './components/ExampleOne';
 import ExampleThree from './components/ExampleThree';
 import Counter from './components/Counter';
 import TodoList from './components/TodoList';
+import Profile from './components/Profile';
 function App() {
   const [count, setCount] = useState(0);
   return (
     <>
       <Counter />
       <TodoList />
+      <Profile />
     </>
   );
 }
