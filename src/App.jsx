@@ -7,6 +7,7 @@ import ExampleThree from './components/ExampleThree';
 import Counter from './components/Counter';
 import TodoList from './components/TodoList';
 import Profile from './components/Profile';
+import ShoppingList from './components/ShoppingList';
 function App() {
   const [count, setCount] = useState(0);
   return (
@@ -14,6 +15,7 @@ function App() {
       <Counter />
       <TodoList />
       <Profile />
+      <ShoppingList />
     </>
   );
 }
