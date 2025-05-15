@@ -4,15 +4,14 @@ import ComponentTwo from './components/ComponentTwo';
 import ExampleTwo from './components/ExampleTwo';
 import ExampleOne from './components/ExampleOne';
 import ExampleThree from './components/ExampleThree';
+import Counter from './components/Counter';
+import TodoList from './components/TodoList';
 function App() {
   const [count, setCount] = useState(0);
   return (
     <>
-      {/* <ComponentOne count={count} onClickHandler={() => setCount(count + 1)} />
-      <ComponentTwo count={count} onClickHandler={() => setCount(count + 1)} /> */}
-      <ExampleTwo />
-      <ExampleOne />
-      <ExampleThree />
+      <Counter />
+      <TodoList />
     </>
   );
 }
