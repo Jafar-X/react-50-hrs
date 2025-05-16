@@ -8,14 +8,16 @@ import Counter from './components/Counter';
 import TodoList from './components/TodoList';
 import Profile from './components/Profile';
 import ShoppingList from './components/ShoppingList';
+import BasicEffect from './components/BasicEffect';
+import CounterEffect from './components/CounterEffect';
+import FetchDataEffect from './components/FetchDataEffect';
 function App() {
   const [count, setCount] = useState(0);
   return (
     <>
-      <Counter />
-      <TodoList />
-      <Profile />
-      <ShoppingList />
+      {/* <BasicEffect /> */}
+      {/* <CounterEffect /> */}
+      <FetchDataEffect />
     </>
   );
 }
