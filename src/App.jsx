@@ -1,24 +1,17 @@
 import { useState } from 'react';
-import ComponentOne from './components/ComponentOne';
-import ComponentTwo from './components/ComponentTwo';
-import ExampleTwo from './components/ExampleTwo';
-import ExampleOne from './components/ExampleOne';
-import ExampleThree from './components/ExampleThree';
-import Counter from './components/Counter';
-import TodoList from './components/TodoList';
-import Profile from './components/Profile';
-import ShoppingList from './components/ShoppingList';
-import BasicEffect from './components/BasicEffect';
-import CounterEffect from './components/CounterEffect';
-import FetchDataEffect from './components/FetchDataEffect';
+import UserProfile from './components/UserProfile';
+import { UserProvider } from './components/UserContext';
+import UpdateUser from './components/UpdateUser';
 function App() {
   const [count, setCount] = useState(0);
   return (
-    <>
+    <UserProvider>
       {/* <BasicEffect /> */}
       {/* <CounterEffect /> */}
-      <FetchDataEffect />
-    </>
+      {/* <FetchDataEffect /> */}
+      <UserProfile />
+      <UpdateUser />
+    </UserProvider>
   );
 }
 
