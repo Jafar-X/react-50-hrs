@@ -1,6 +1,5 @@
 import { useState } from 'react';
-import UserProfile from './components/UserProfile';
-import Todo from './components/Todo';
+import Form from './components/Form';
 
 function App() {
   const [count, setCount] = useState<number>(0);
@@ -8,8 +7,9 @@ function App() {
     <>
       {/* <h1>Counter: {count}</h1>
       <button onClick={() => setCount(count + 1)}>Increment</button> */}
-      <UserProfile />
-      <Todo />
+      {/* <UserProfile />
+      <Todo /> */}
+      <Form />
     </>
   );
 }
