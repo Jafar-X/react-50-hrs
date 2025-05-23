@@ -1,11 +1,11 @@
-import { useState } from 'react';
-import UserProfile from './components/UserProfile';
-import { UserProvider } from './components/UserContext';
-import UpdateUser from './components/UpdateUser';
-import CounterWithReducer from './components/CounterWithReducer';
+import FocusInput from './components/useRef/FocusInput';
+import Timer from './components/useRef/Timer';
 function App() {
-  const [count, setCount] = useState(0);
-  return <CounterWithReducer />;
+  return (
+    <div>
+      <Timer />
+    </div>
+  );
 }
 
 export default App;
