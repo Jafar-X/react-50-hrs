@@ -1,15 +1,17 @@
 import React, { useContext } from 'react';
-import { DashboardContext } from './context';
+import { DashboardContext, useUserContext } from './context';
 
 const Profile = () => {
-  const user = useContext(DashboardContext);
-  return <div>
-    <h2>User Profile:</h2>
-    <ul>
+  const user = useUserContext();
+  return (
+    <div>
+      <h2>User Profile:</h2>
+      <ul>
         <li>User name: {user.name}</li>
         <li>Subscription Status: {user.isSubscribed}</li>
-    </ul>
-  </div>;
+      </ul>
+    </div>
+  );
 };
 
 export default Profile;
