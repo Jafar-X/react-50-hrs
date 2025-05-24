@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import Form from './components/Form';
+import FocustInput from './components/FocustInput';
+import Demo from './use-context/Demo';
 
 function App() {
   const [count, setCount] = useState<number>(0);
@@ -9,7 +11,9 @@ function App() {
       <button onClick={() => setCount(count + 1)}>Increment</button> */}
       {/* <UserProfile />
       <Todo /> */}
-      <Form />
+      {/* <Form /> */}
+      {/* <FocustInput /> */}
+      <Demo />
     </>
   );
 }
