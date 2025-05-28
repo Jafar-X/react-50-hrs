@@ -14,10 +14,10 @@ export interface PasswordState {
   generatePassword: () => void;
 }
 
-const usePasswordStore = create<PasswordState>((set) => ({
+export const usePasswordStore = create<PasswordState>((set) => ({
   length: 12,
   includeNumbers: true,
-  includeSymbols: true,
+  includeSymbols: false,
   includeUppercaseLetter: true,
   includeLowercaseLetter: true,
   generatedPassword: '',
@@ -50,8 +50,8 @@ const usePasswordStore = create<PasswordState>((set) => ({
         password += characters[Math.floor(Math.random() * characters.length)];
       }
 
-      return { generatePassword: password };
+      return { generatedPassword: password };
     }),
 }));
 
-export default usePasswordStore;
+//export default usePasswordStore;
