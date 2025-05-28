@@ -73,7 +73,7 @@ const RecipeApp = () => {
   };
   return (
     <div className="min-h-screen flex items-center justify-center bg-green-100">
-      <div className="bg-white p-6 rounded-lg shado-lg w-full max-w-2xl">
+      <div className="bg-white p-6 rounded-lg shadow-lg w-full max-w-2xl">
         <h1 text-3xl className="font-bold mb-6 text-center text-green-800">
           Recipe Book
         </h1>
@@ -91,16 +91,16 @@ const RecipeApp = () => {
             value={ingredients}
             onChange={(e) => setIngredients(e.target.value)}
             placeholder="Ingredients (comma seperated)"
-            className="w-full px-4 py-2 border rounded-lg border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500"
+            className="mt-4 w-full px-4 py-2 border rounded-lg border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500"
           />
 
           <textarea
             value={instructions}
             onChange={(e) => setInstructions(e.target.value)}
             placeholder="Instructions"
-            className="w-full px-4 py-2 border rounded-lg border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500"
+            className="mt-4 w-full px-4 py-2 border rounded-lg border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500"
           />
-          <div className="flex justify-between">
+          <div className="flex justify-between mt-4">
             {editingRecipe ? (
               <>
                 <button

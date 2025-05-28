@@ -1,4 +1,6 @@
 import ExpenseApp from './components/ExpenseApp';
+import PasswordGenerationApp from './components/PasswordGenerationApp';
+import RecipeApp from './components/RecipeApp';
 
 const App = () => {
   return (
@@ -6,7 +8,8 @@ const App = () => {
       {/* <h1 className="text-3xl font-bold underline">Hello world</h1> */}
       {/* <RecipeApp /> */}
       {/* <TodoApp /> */}
-      <ExpenseApp />
+      {/* <ExpenseApp /> */}
+      <PasswordGenerationApp />
     </div>
   );
 };
