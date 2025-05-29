@@ -1,4 +1,5 @@
 import ExpenseApp from './components/ExpenseApp';
+import MealsApp from './components/MealsApp';
 import PasswordGenerationApp from './components/PasswordGenerationApp';
 import RecipeApp from './components/RecipeApp';
 
@@ -9,7 +10,8 @@ const App = () => {
       {/* <RecipeApp /> */}
       {/* <TodoApp /> */}
       {/* <ExpenseApp /> */}
-      <PasswordGenerationApp />
+      {/* <PasswordGenerationApp /> */}
+      <MealsApp />
     </div>
   );
 };

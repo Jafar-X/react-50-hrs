@@ -1,9 +1,9 @@
 import { create } from 'zustand';
 
 interface Meals {
-  mealId: string;
-  mealStr: string;
-  mealThumbStr: string;
+  idMeal: string;
+  strMeal: string;
+  strMealThumb: string;
 }
 
 interface MealState {
