@@ -25,32 +25,40 @@ const MealsApp = () => {
   );
   return (
     <>
-      <div className="ml-12 flex items-center text-center text-xl font-semibold">
+      <div className="min-h-screen flex flex-col items-center justify-center p-8 bg-gray-100">
+        <h1 className="text-4xl font-bold mb-8 text-teal-600">
+          Seafood Recipes
+        </h1>
         <input
           type="text"
           value={searchQuery}
           placeholder="Search a meal..."
-          className="bg-amber-100 border-1 rounded-md mb-2"
+          className="border border-teal-400 rounded-lg p-3 mb-8 w-96 text-center focus:outline-none focus:ring-2 focus:ring-teal-500"
           onChange={(e) => setSearchQuery(e.target.value)}
         />
-      </div>
-      <div className="ml-14 flex items-center text-center text-xl font-semibold">
-        <ul>
+        <div>
           {filteredMeals.length > 0 ? (
             filteredMeals.map((meal) => (
-              <li key={meal.idMeal}>
-                <h2>{meal.strMeal}</h2>
+              <div
+                key={meal.idMeal}
+                className="bg-white shadow-md rounded-lg p-4 flex flex-col items-center mb-2"
+              >
+                {/*  <h2>{meal.strMeal}</h2> */}
                 <img
                   src={meal.strMealThumb}
                   alt={meal.strMeal}
-                  className="h-50 w-80"
+                  className="w-full h-48 object-cover rounded-t-lg m-4"
                 />
-              </li>
+                <h2 className="text-xl font-semibold text-teal-700 mb-2">
+                  {meal.strMeal}
+                </h2>
+                <p className="text-gray-600 text-sm">Delicious seafood meal</p>
+              </div>
             ))
           ) : (
             <h2>Sorry, we couldn't find what you were looking for</h2>
           )}
-        </ul>
+        </div>
       </div>
     </>
   );
