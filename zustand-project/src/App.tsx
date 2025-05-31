@@ -1,8 +1,4 @@
-import ExpenseApp from './components/ExpenseApp';
-import MealsApp from './components/MealsApp';
-import PasswordGenerationApp from './components/PasswordGenerationApp';
-import RecipeApp from './components/RecipeApp';
-
+import FormBuilder from './components/FormBuilder';
 const App = () => {
   return (
     <div>
@@ -11,7 +7,8 @@ const App = () => {
       {/* <TodoApp /> */}
       {/* <ExpenseApp /> */}
       {/* <PasswordGenerationApp /> */}
-      <MealsApp />
+      {/* <MealsApp /> */}
+      <FormBuilder />
     </div>
   );
 };
